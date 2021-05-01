@@ -10,15 +10,11 @@ This directory contains a conda environment file which contains a list of all th
 * Open project terminal (..\\Computational_argumentation>) and type below command to create the Anaconda environment in local from the environment.yml file.
     >conda env create -f .conda/environment.yml
 
-# How to update or install library in Local Anaconda Environment?
+# How to update or install any library in Local Anaconda Environment?
 
-<!-- Follow the step mentioned in link to [update or add library](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#updating-an-environment) in local Anaconda Environment. -->
+Follow the step mentioned in link to [update or add library](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#updating-an-environment) in local Anaconda Environment.
 
 # How to export the environment.yml file?
 
-<!-- After adding or updating any new packages to environment, export the updated environment.yml file. -->
-<!-- >conda env export --from-history >environment.yml -->
-
-# How to push updated environment.yml file to GitLab repository?
-
-<!-- Copy updated environment.yml file from user directory (Computational_argumentation\\.conda\\) to code repository (Computational_argumentation\\.conda\\) and push it to GitHub. -->
+After adding or updating any new packages to environment, export the updated environment.yml file.
+>conda env export --from-history >environment.yml
