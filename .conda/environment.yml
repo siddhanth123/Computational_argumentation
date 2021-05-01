@@ -1,0 +1,6 @@
+name: hardlyhuman
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - scrapy=2.4.1
