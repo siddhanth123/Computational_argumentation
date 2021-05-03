@@ -65,6 +65,11 @@ class QuotesSpider(scrapy.Spider):
 			# print("\n")
 
 			title_list_con = args.css('h2::text').getall()
+
+			if not title_list_con:
+				title_list_con = args.css('h2 a::text').getall()
+
+
 			debate_title_con = "".join(title_list_con)
 
 			con_arg = dict()
@@ -83,10 +88,3 @@ class QuotesSpider(scrapy.Spider):
 			'pro_arguments': pro_arg_list,
 			'con_arguments': con_arg_list		
 		}
-
-		# for quote in response.css('div.quote'):
-		# 	yield{
-		# 		'text': quote.css('span.text::text').get(),
-		# 		'author' : quote.css('small.author::text').get(),
-		# 		'tags': quote.css('div.tags a.tag::text').getall() 
-		# 	}
