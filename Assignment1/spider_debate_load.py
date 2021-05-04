@@ -99,7 +99,7 @@ class QuotesSpider(scrapy.Spider):
 		}
 
 
-		body = '{"debateId":"155D90B8-23AF-4AB5-889D-3D6AEC074752","pageNumber":99,"itemsPerPage":10,"ysort":5,"nsort":5}'
+		body = '{"debateId":"155D90B8-23AF-4AB5-889D-3D6AEC074752","pageNumber":2,"itemsPerPage":10,"ysort":5,"nsort":5}'
 
 
 		yield scrapy.Request(url=url, method='POST', dont_filter=True, headers=headers, body=body, callback = self.parse_extra)
