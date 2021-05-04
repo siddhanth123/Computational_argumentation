@@ -118,3 +118,7 @@ class QuotesSpider(scrapy.Spider):
 		print("here in extra parse")
 		print("\n")
 		print(response.body)
+
+
+# To extract debate-id from list of opinions.
+# response.css('li').xpath('@did').getall()
