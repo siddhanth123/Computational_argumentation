@@ -24,6 +24,7 @@ df_val = pd.read_json(val_data_file)
 def PreprocessData(df):
     df['clean_text'] = df['text'].str.lower()
     df['clean_text'] = df['clean_text'].str.strip()
+    df['clean_text'] = df['clean_text'].str.replace(r"http\S+",'')
     df['clean_text'] = df['clean_text'].str.replace('[^\w\s]','')
     return df
 
