@@ -2,7 +2,6 @@ import sys
 import numpy as np
 import pandas as pd
 import spacy
-import nltk
 import json
 import re
 from sklearn.feature_extraction.text import CountVectorizer
